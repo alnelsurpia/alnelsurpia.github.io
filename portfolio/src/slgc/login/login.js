@@ -1,9 +1,7 @@
 import React from 'react'
 import './login.css';
 import { BrowserRouter as Router, Route,Routes, useNavigate} from "react-router-dom";
-import { Link } from 'react-router-dom';
-import Branch from "../branch/branch";
-import Profile from './profile';
+
 function Login() {
     const navigate = useNavigate()
     return (
@@ -33,7 +31,7 @@ function Login() {
 
                 <div class="bottom">
                     <button type="button" id="login">Login</button> 
-                    <button type="button" id="login" onClick={() => navigate('branch')}>Add New Branch</button>
+                    <button type="button" id="login" onClick={() => navigate('Branch')}>Add New Branch</button>
                 </div>
 
             </div>
